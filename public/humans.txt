@@ -1,0 +1,36 @@
+__  __  __
+\ \ \ \ \/
+ \ \/\ \
+  \/  \/
+
+The humans.txt file explains the team, technology,
+and graphic assets behind this site humanstxt.org.
+
+_______________________________________________________________________________
+
+DESIGNER | デザイナー
+
+Husnul Jahaneer
+Hand crafted design & web development
+
+Design tools:
+Figma
+Photoshop
+
+twitter.com/hamishmw
+github.com/hamishmw
+
+_______________________________________________________________________________
+
+TECHNOLOGY | テクノロジー
+
+React
+Three js
+Popmotion
+
+_______________________________________________________________________________
+
+FONTS | フォント
+
+Gotham
+Hiragino Kaku Gothic
