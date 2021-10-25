@@ -1,16 +1,12 @@
-export const navLinks = [
-  {
-    label: 'Projects',
-    pathname: '/',
-    hash: '#project-1',
-  },  
+export const navLinks = [  
   {
     label: 'Resume',
     pathname: '/resume',
   },
   {
-    label: 'Portfolio',
-    pathname: '/portfolio',
+    label: 'Projects',
+    pathname: '/',
+    hash: '#project-1',
   },
   {
     label: 'Contact',

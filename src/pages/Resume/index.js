@@ -1,13 +1,33 @@
 import { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
 import Profile from 'pages/Home/Profile';
+import classNames from 'classnames';
 import Footer from 'components/Footer';
 import { usePrefersReducedMotion, useRouteTransition } from 'hooks';
 import { useLocation } from 'react-router-dom';
 import iphone11 from 'assets/iphone-11.glb';
 import macbookPro from 'assets/macbook-pro.glb';
+import Divider from 'components/Divider';
 import './index.css';
 
+import {
+  Timeline,
+  Container,
+  YearContent,
+  BodyContent,
+  Section,
+  Description,
+ } from 'vertical-timeline-component-react';
+
+ const customTheme = {
+  yearColor: '#405b73',
+  lineColor: '#d0cdc4',
+  dotColor: '#262626',
+  borderDotColor: '#d0cdc4',
+  titleColor: '#405b73',
+  subtitleColor: '#bf9765',
+  textColor: '#262626',
+ };
 const Resume = () => {
   const { status } = useRouteTransition();
   const { hash, state } = useLocation();
@@ -133,7 +153,37 @@ const Resume = () => {
         visible={visibleSections.includes(details.current)}
         id="details"
       />
-    
+  <h1 className="outro__title" style={{textAlign: "center",marginBottom:'50px'}}>
+        EDUCATION {' \n '} </h1>
+      
+          <div className="outro__content" style={{display: 'flex', flexDirection: 'row',justifyContent: 'center'}}>
+            <div className="profile__column" >
+            <Timeline theme={customTheme} dateFormat='ll'>
+   <Container>
+    <YearContent startDate='2020/07/01' currentYear />
+    <BodyContent>
+     <Section title='Title'>
+      <Description variant='subtitle' text='Subtitle' />
+      <Description text='Description' />
+      <Description text='Another description' />
+     </Section>
+     <YearContent startDate='2020/07/01' currentYear />
+
+     <Section title='Another title'>
+      <Description text='Description' />
+      <Description text='Another description' />
+     </Section>
+     <YearContent startDate='2020/07/01' currentYear />
+
+     <Section title='Another title'>
+      <Description text='Description' />
+      <Description text='Another description' />
+     </Section>
+    </BodyContent>
+   </Container>
+  </Timeline>
+   </div>
+   </div>
       <Footer />
     </div>
   );

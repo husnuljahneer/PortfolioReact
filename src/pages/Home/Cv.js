@@ -27,7 +27,7 @@ const ProfileText = ({ status, titleId }) => (
       className={classNames('profile__description')}
       size="l"
     >
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
+      I’m Jahneer, currently I live in Sydney working as a senior product designer at{' '}
       <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
       animations, and icon illustration. Being comfortable with code allows me to rapidly
       prototype and validate experiences. If you're interested in the tools and software I

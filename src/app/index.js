@@ -10,7 +10,6 @@ import VisuallyHidden from 'components/VisuallyHidden';
 import { useLocalStorage } from 'hooks';
 import { msToNum } from 'utils/style';
 import { reflow } from 'utils/transition';
-import prerender from 'utils/prerender';
 import { initialState, reducer } from 'app/reducer';
 import './reset.css';
 import './index.css';
@@ -28,22 +27,9 @@ const Uses = lazy(() => import('pages/Uses'));
 export const AppContext = createContext();
 export const TransitionContext = createContext();
 
-const repoPrompt = `
-__  __  __
-\u005C \u005C \u005C \u005C \u005C\u2215\n \u005C \u005C\u2215\u005C \u005C\n  \u005C\u2215  \u005C\u2215
-\n\nTaking a peek huh? Check out the source code: https://github.com/HamishMW/portfolio
-`;
-
 const App = () => {
   const [storedTheme] = useLocalStorage('theme', 'dark');
   const [state, dispatch] = useReducer(reducer, initialState);
-
-  useEffect(() => {
-    if (!prerender) {
-      console.info(`${repoPrompt}\n\n`);
-    }
-    window.history.scrollRestoration = 'manual';
-  }, []);
 
   useEffect(() => {
     dispatch({ type: 'setTheme', value: storedTheme });
@@ -67,7 +53,7 @@ const AppRoutes = () => {
   return (
     <Fragment>
       <Helmet>
-        <link rel="canonical" href={`https://hamishw.com${pathname}`} />
+        <link rel="canonical" href={`https://jahneer.ninja${pathname}`} />
       </Helmet>
       <VisuallyHidden showOnFocus as="a" className="skip-to-main" href="#MainContent">
         Skip to main content

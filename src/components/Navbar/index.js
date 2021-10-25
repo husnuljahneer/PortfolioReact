@@ -1,7 +1,7 @@
 import { useRef, useState, memo } from 'react';
 import { NavLink, Link as RouterLink } from 'react-router-dom';
 import { Transition } from 'react-transition-group';
-import Monogram from 'components/Monogram';
+import Logo from 'components/Logo';
 import Icon from 'components/Icon';
 import NavToggle from './NavToggle';
 import ThemeToggle from './ThemeToggle';
@@ -57,12 +57,13 @@ function Header(props) {
     <header className="navbar" ref={headerRef}>
       <RouterLink
         className="navbar__logo"
-        to={{ pathname: '/', hash: '#intro', state: hashKey }}
-        aria-label="Hamish Williams, Designer"
+        to={{ pathname: '/', state: hashKey }}
+        aria-label="Husnul Jahaneer, Designer"
         onClick={handleMobileNavClick}
         onMouseUp={blurOnMouseUp}
       >
-        <Monogram highlight />
+        {/* <Monogram highlight /> */}
+<Logo />
       </RouterLink>
       <NavToggle onClick={() => dispatch({ type: 'toggleMenu' })} menuOpen={menuOpen} />
       <nav className="navbar__nav">

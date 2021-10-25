@@ -132,6 +132,7 @@ function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...rest }) 
                   ))}
                 </TransitionGroup>
               </Heading>
+                
             </header>
             {windowSize.width > media.tablet && (
               <div
@@ -155,6 +156,7 @@ function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...rest }) 
               </div>
             )}
           </Fragment>
+          
         )}
       </Transition>
      

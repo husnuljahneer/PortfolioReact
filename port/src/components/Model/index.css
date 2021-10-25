@@ -1,0 +1,13 @@
+.model {
+  position: relative;
+  opacity: 0;
+}
+
+.model--loaded {
+  animation: fade-in 1s ease forwards var(--delay);
+}
+
+.model__canvas {
+  position: absolute;
+  inset: 0;
+}

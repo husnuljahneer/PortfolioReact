@@ -1,10 +1,10 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://hamishw.com",
-  "description": "Portfolio site for Hamish Williams",
+  "homepage": "https://jahneer.ninja",
+  "description": "Portfolio site for Husnul Jahaneer",
   "repository": "https://github.com/HamishMW/portfolio.git",
-  "author": "Hamish Williams <hello@hamishw.com>",
+  "author": "Husnul Jahaneer <hello@jahneer.ninja>",
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@hamishmw/react-scripts-postcss": "4.0.0-mod1",
@@ -38,7 +38,8 @@
     "react-helmet": "^6.1.0",
     "react-router-dom": "5.2.0",
     "react-transition-group": "^4.4.1",
-    "three": "^0.129.0"
+    "three": "^0.129.0",
+    "vertical-timeline-component-react": "^2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
