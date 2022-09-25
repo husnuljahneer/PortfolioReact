@@ -6,7 +6,7 @@
   "repository": "https://github.com/husnuljahneer/portfolio.git",
   "author": "Husnul Jahaneer <hello@jahneer.ninja>",
   "devDependencies": {
-    "@babel/core": "^7.12.3",
+    "@babel/core": "7.19.1",
     "@hamishmw/react-scripts-postcss": "4.0.0-mod1",
     "@storybook/addon-a11y": "^6.1.10",
     "@storybook/addon-actions": "^6.1.10",
