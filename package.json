@@ -37,7 +37,7 @@
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-router-dom": "5.2.0",
-    "react-transition-group": "^4.4.1",
+    "react-transition-group": "4.4.5",
     "three": "^0.129.0",
     "vertical-timeline-component-react": "^2.1.2"
   },
