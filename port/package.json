@@ -12,7 +12,7 @@
     "@storybook/addon-actions": "^6.1.10",
     "@storybook/addon-controls": "^6.1.10",
     "@storybook/addon-toolbars": "^6.1.10",
-    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/preset-create-react-app": "^4.0.0",
     "@storybook/react": "^6.2.9",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
