@@ -27,7 +27,7 @@
     "stylelint-config-recommended": "^3.0.0"
   },
   "dependencies": {
-    "@mdx-js/react": "^1.6.22",
+    "@mdx-js/react": "^3.0.0",
     "bootstrap": "^5.1.1",
     "classnames": "^2.2.6",
     "popmotion": "^8.7.5",
